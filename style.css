@@ -1,0 +1,14 @@
+body {
+	background-color: #c1dee8;
+}
+
+.elem {
+	border-style: inset;
+	background-color: #BBBBBB;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
