@@ -2,13 +2,52 @@ body {
 	background-color: #c1dee8;
 }
 
-.elem {
-	border-style: inset;
-	background-color: #BBBBBB;
+#link {
+	display: block;
 }
 
-.flex-container {
+#elem {
+	width: 125px;
+	height: 125px;
+	border-radius: 10px;
+	border-style: double;
+	background-color: #BBBBBB;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 	flex-direction: column;
+}
+
+#gametitle {
+	text-align: center;
+}
+
+#hoverlink {
+	display: block;
+	text-align: center;
+	visibility:hidden;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding-top:5px;
+	flex-basis:0px;
+	font-size:0px;
+}
+
+#elem:hover {
+	width: 250px;
+	height: auto;
+}
+
+#elem:hover > #hoverlink {
+	visibility: visible;
+	font-size:15px;
+}
+
+
+#flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 30px;
 }
